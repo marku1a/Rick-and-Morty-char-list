@@ -4,9 +4,9 @@ import headerImageSm from '../../assets/pictures/headerImgSm.png';
 import headerImageXs from '../../assets/pictures/headerImgXs.png';
 
 interface HeaderProps {
-    search: string;
+    search: string;                        // current search string and setter for search string
     setSearch: (value: string) => void;
-    status: string;
+    status: string;                        // current status filter and setter for status filter
     setStatus: (value: string) => void;
 }
 
@@ -36,6 +36,7 @@ const Header = (props: HeaderProps) => {
                     backgroundImage: `url(${headerImageXs})`,
                 },
             }}>
+                {/* this container holds search and filter inputs, visible only on md+ screens */}
                 <Container maxWidth={false} sx={{
                     display: { xs: 'none', md: 'flex' },
                     justifyContent: 'flex-end'
@@ -46,15 +47,15 @@ const Header = (props: HeaderProps) => {
                 </Container>
             </Box>
 
-            {/* search and select for small screens */}
+            {/* search and filter for small screens, positioned below header */}
             <Box
                 sx={{
                     position: { xs: 'fixed' },
-                    top: { xs: '120px', sm: '180px', md: 'auto' }, //header height on xs
+                    top: { xs: '120px', sm: '180px', md: 'auto' }, //header height on xs, sm -> moving the boxes down for that height
                     width: '100%',
-                    backgroundColor: '#000', // da ne ostane bela pozadina
-                    zIndex: 1099, // ispod headera
-                    display: { xs: 'flex' }, // samo na xs i sm
+                    backgroundColor: '#000', 
+                    zIndex: 1099, // to go bellow header
+                    display: { xs: 'flex' }, 
                     justifyContent: 'center',
                     py: 2,
                     

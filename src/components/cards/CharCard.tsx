@@ -3,7 +3,7 @@ import { Character } from '../../types/Characters';
 
 type Props = {character: Character};
 
-const CharCard = ({character}: Props) => {          //cards for character showcase
+const CharCard = ({character}: Props) => {          // Card component to showcase character's info
     return (
         <Card sx = {{
             maxWidth: 200,
@@ -20,14 +20,14 @@ const CharCard = ({character}: Props) => {          //cards for character showca
             boxShadow: 6,
             }
         }}>
-            <CardMedia
+            <CardMedia                        // character image
                 component = 'img'
                 height = '200'
                 image = {character.image}
                 alt =  {character.name}
 
             />
-            <Box                              //for more info about the character on mouseover    
+            <Box                              // for more info about the character on mouseover    
                 sx={{
                 position: 'absolute',
                 top: 0,
@@ -46,7 +46,7 @@ const CharCard = ({character}: Props) => {          //cards for character showca
                 
                 transition: 'opacity 0.3s ease',
                 "&:hover": {
-                    opacity: 1,               // show on mouseover
+                    opacity: 1,               // show info on mouseover
                 }
                 }}
             >
@@ -55,7 +55,15 @@ const CharCard = ({character}: Props) => {          //cards for character showca
                 <Typography variant="h6">Gender: {character.gender}</Typography>
                 <Typography variant="h6">Location: {character.location}</Typography>
             </Box>
-            <CardContent sx = {{maxHeight: 30, minHeight: 30, px: 1, display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+            <CardContent sx = {{
+                            maxHeight: 20,
+                            minHeight: 20,
+                            px: 1,
+                            py: 3,
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                        }}>
                 <Box textAlign="center">
                     <Typography variant="button" 
                     sx={{
@@ -63,6 +71,7 @@ const CharCard = ({character}: Props) => {          //cards for character showca
                         fontSize: '1rem',
                         textAlign: 'center',
                         whiteSpace: 'wrap',
+                        lineHeight: '1.1'
                         }}>{character.name}</Typography>
                 </Box>
             </CardContent>
