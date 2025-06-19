@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Rick-and-Morty-char-list/static/css/main.58e3b2bb.css",
+    "main.js": "/Rick-and-Morty-char-list/static/js/main.3da79cb6.js",
+    "static/js/453.bce9abf3.chunk.js": "/Rick-and-Morty-char-list/static/js/453.bce9abf3.chunk.js",
+    "static/media/headerImgLg.png": "/Rick-and-Morty-char-list/static/media/headerImgLg.cd56fbd89e92f784adc1.png",
+    "static/media/headerImgSm.png": "/Rick-and-Morty-char-list/static/media/headerImgSm.f99b9a3b4654af04d263.png",
+    "static/media/headerImgXs.png": "/Rick-and-Morty-char-list/static/media/headerImgXs.7d37f66249efbe9ca0af.png",
+    "index.html": "/Rick-and-Morty-char-list/index.html",
+    "main.58e3b2bb.css.map": "/Rick-and-Morty-char-list/static/css/main.58e3b2bb.css.map",
+    "main.3da79cb6.js.map": "/Rick-and-Morty-char-list/static/js/main.3da79cb6.js.map",
+    "453.bce9abf3.chunk.js.map": "/Rick-and-Morty-char-list/static/js/453.bce9abf3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58e3b2bb.css",
+    "static/js/main.3da79cb6.js"
+  ]
+}
